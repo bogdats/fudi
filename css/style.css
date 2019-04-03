@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline'), local('Lato-Hairline'), url('../fonts/latohairline.woff2') format('woff2'), url('../fonts/latohairline.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('../fonts/latohairlineitalic.woff2') format('woff2'), url('../fonts/latohairlineitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
 body{
 	font: 14px/2.14 'Lato', sans-serif; 
 	color: #444;
@@ -293,4 +307,149 @@ h1{
 
 .ba-introduction-store > img{
 	padding-right: 10px;
+}
+
+.ba-review{
+	background: #444 url(../img/bg2.jpg) no-repeat 50%;
+	background-size: cover;
+	color: #fff;
+	font-family: 'Lato Hairline', sans-serif;
+	font-size: 28px;
+	letter-spacing: 0.008em;
+	margin-bottom: 15px;
+}
+
+.ba-user-review{
+	border: grey 1px solid;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ba-food {
+    text-align: center;
+    padding: 97px 0 0;
+}
+
+.ba-food .ba-section-title {
+    margin-bottom: 47px;
+}
+
+.ba-food .ba-section-title::after {
+    top: 35px;
+}
+
+.ba-food-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ba-food-item {
+    width: 20%;
+}
+
+.ba-food-item a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.ba-food-item a img {    
+    width: 100%;
+    display: block;
+}
+
+.ba-food-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ba-food-item p {
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    padding-top: 8px;
+	z-index: 1;
+	color: #fff;
+}
+
+.ba-food-item h3 {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+	z-index: 1;
+	color: #fff;
+}
+
+
+
+
+
+
+.ba-features {
+	padding: 46px 0 37px;
+	color: black;
+}
+
+.ba-features-inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ba-features-inner p {
+    letter-spacing: 0.055em;
+}
+
+.ba-number {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: -3px;
+}
+
+footer {
+    background-color: #F4F4F4;
+    color: rgba(139, 139, 139, 0.5);
+    border-top: 1px solid #E9E9E9;
+    padding: 37px 0 14px;
+    font-size: 14px;
+}
+
+.ba-footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ba-design {
+    color: #8b8b8b;
+    letter-spacing: 0.175em;
+}
+
+.ba-design a {
+    color: #000;
+    margin-left: 10px;
+    font-weight: 700;
 }
